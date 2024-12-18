@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VierGewinnt
 {
-    public partial class OptionsMenu : Form
+    public partial class GameInstruction : Form
     {
-        public OptionsMenu()
+        public GameInstruction()
         {
             InitializeComponent();
         }
@@ -20,12 +20,6 @@ namespace VierGewinnt
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            GameInstruction instruction = new GameInstruction();
-            instruction.Show();
         }
     }
 }

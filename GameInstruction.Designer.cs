@@ -1,6 +1,6 @@
 ﻿namespace VierGewinnt
 {
-    partial class OptionsMenu
+    partial class GameInstruction
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameInstruction));
             button1 = new Button();
-            button2 = new Button();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
             SuspendLayout();
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = SystemColors.HotTrack;
-            textBox1.Font = new Font("Segoe UI Black", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            textBox1.ForeColor = Color.Gold;
-            textBox1.Location = new Point(12, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(328, 61);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "Optionen";
-            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -55,36 +44,47 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
+            // textBox2
             // 
-            button2.Location = new Point(119, 321);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 3;
-            button2.Text = "Anleitung";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            textBox2.BackColor = SystemColors.GradientActiveCaption;
+            textBox2.Location = new Point(12, 90);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(328, 275);
+            textBox2.TabIndex = 3;
+            textBox2.Text = resources.GetString("textBox2.Text");
             // 
-            // OptionsMenu
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.HotTrack;
+            textBox1.Font = new Font("Segoe UI Black", 20F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            textBox1.ForeColor = Color.Gold;
+            textBox1.Location = new Point(12, 12);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(328, 61);
+            textBox1.TabIndex = 4;
+            textBox1.Text = "Anleitung";
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            // 
+            // GameInstruction
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(352, 450);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(textBox1);
-            Name = "OptionsMenu";
+            Controls.Add(textBox2);
+            Controls.Add(button1);
+            Name = "GameInstruction";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "OptionsMenu";
+            Text = "GameInstruction";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox textBox1;
         private Button button1;
-        private Button button2;
+        private TextBox textBox2;
+        private TextBox textBox1;
     }
 }
