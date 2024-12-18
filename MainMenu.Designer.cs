@@ -41,14 +41,14 @@
             textBox1.ForeColor = Color.Gold;
             textBox1.Location = new Point(12, 12);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(776, 61);
+            textBox1.Size = new Size(328, 61);
             textBox1.TabIndex = 0;
             textBox1.Text = "Vier Gewinnt";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // button1
             // 
-            button1.Location = new Point(346, 200);
+            button1.Location = new Point(121, 260);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(346, 266);
+            button2.Location = new Point(121, 313);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(346, 338);
+            button3.Location = new Point(121, 367);
             button3.Name = "button3";
             button3.Size = new Size(112, 34);
             button3.TabIndex = 3;
@@ -80,13 +80,14 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(352, 450);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Name = "StartScreen";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Start Bildschirm";
             Load += StartScreen_Load;
             ResumeLayout(false);

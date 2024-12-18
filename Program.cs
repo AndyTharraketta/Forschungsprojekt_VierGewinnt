@@ -13,16 +13,7 @@ namespace VierGewinnt
             ApplicationConfiguration.Initialize();
             Application.Run(new StartScreen());
 
-            //!!
-            
-
-
-
-
-
-
-
-            //!!
+           
         }
     }
 }

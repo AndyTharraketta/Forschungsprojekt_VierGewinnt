@@ -40,24 +40,24 @@
             textBox1.ForeColor = Color.Gold;
             textBox1.Location = new Point(12, 12);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(776, 61);
+            textBox1.Size = new Size(328, 61);
             textBox1.TabIndex = 1;
             textBox1.Text = "Let´s Play";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // button1
             // 
-            button1.Location = new Point(260, 404);
+            button1.Location = new Point(114, 300);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Text = "Starten";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(439, 404);
+            button2.Location = new Point(114, 361);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 3;
@@ -69,11 +69,13 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.GradientActiveCaption;
+            ClientSize = new Size(352, 450);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Name = "GameMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "GameScreen";
             Load += GameScreen_Load;
             ResumeLayout(false);
