@@ -17,13 +17,13 @@ namespace VierGewinnt
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)      // Startet das Spiel
         {
             PlayGame startGame = new PlayGame();
             startGame.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)      // Zurück zum vorherigen Menü
         {
             this.Close();
         }
